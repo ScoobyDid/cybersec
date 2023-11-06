@@ -1,28 +1,3 @@
-qselis skani,
-
-sistemis info, 
-
-controlis meqanizmebi da sashualebebi (dlp, web app firewall, cm...)
-
-Fake misamartit rogor xdeba dasksnireba
-
-Nmap, netstat, wireshark
-
-(iso, nist standartebi),
-
-Firewall tipebi da magat shoris sxvaoba, 
-
-wireshark ra aris, cnobili portebi,
-
-teoriuli shekitxvebi, 
-
-
-
-
-
-
-
-
 
 iso:
 iso 27001 არის ერთ-ერთი ყველაზე ცნობილი ინფორმაციული უსაფრთხოების მენეჯმენტის სისტემების (ISMS) სტანდარტი
