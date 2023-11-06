@@ -1,0 +1,141 @@
+qselis skani,
+
+sistemis info, 
+
+controlis meqanizmebi da sashualebebi (dlp, web app firewall, cm...)
+
+Fake misamartit rogor xdeba dasksnireba
+
+Nmap, netstat, wireshark
+
+(iso, nist standartebi),
+
+Firewall tipebi da magat shoris sxvaoba, 
+
+wireshark ra aris, cnobili portebi,
+
+teoriuli shekitxvebi, 
+
+
+
+
+
+
+
+
+
+iso:
+iso 27001 არის ერთ-ერთი ყველაზე ცნობილი ინფორმაციული უსაფრთხოების მენეჯმენტის სისტემების (ISMS) სტანდარტი
+ის განსაზღვრავს მოთხოვნებს, რომლებიც ISMS უნდა აკმაყოფილებდეს.
+iso-სთან შესაბამისობა ნიშნავს საერთაშორისო სტანდარტში დადგენილ ყველა საუკეთესო პრაქტიკის დაცვა
+
+nist:
+NIST-ის მისიაა ხელი შეუწყოს აშშ-ს ინოვაციას მეცნიერების, სტანდარტებისა და ტექნოლოგიების წინსვლის გზით,
+
+pci ssc:
+PCI უსაფრთხოების სტანდარტების საბჭო (PCI SSC) არის გლობალური ფორუმი, რომელიც აერთიანებს გადახდების ინდუსტრიის დაინტერესებულ მხარეებს, რათა განავითარონ და ხელი შეუწყონ მონაცემთა უსაფრთხოების სტანდარტებისა და რესურსების მიღებას უსაფრთხო გადახდებისთვის მთელ მსოფლიოში.
+
+hippa:
+HIPAA არის ფედერალური კანონი, რომელიც მოითხოვს ეროვნული სტანდარტების შექმნას, რათა დაიცვან სენსიტიური პაციენტის ჯანმრთელობის ინფორმაცია პაციენტის თანხმობის ან ცოდნის გარეშე გამჟღავნებისგან.
+
+
+dmca:
+dmca არის კანონი, რომლის მიზანია ციფრულ სამყაროში დაიცვას როგორც საავტორო უფლებების მფლობელების, ისე მომხმარებლების უფლებები
+
+fisma:
+fisma არის კანონი, რომელიც ფედერალურ უწყებებისგან ინფორმაციული უსაფრთხოებისა და დაცვის პროგრამის შემუშავება, დოკუმენტირება და განხორციელება მოითხოვს
+
+gdpr:
+gdpr არის ევროკავშირის რეგულაცია ინფორმაციის კონფიდენციალურობის შესახებ
+
+
+
+wireshark:
+Wireshark არის უფასო და ღია კოდის პაკეტის ანალიზატორი. იგი გამოიყენება ქსელის ანალიზისთვის, პრობლემების გადასაჭრელად, პროგრამული უზრუნველყოფისა და საკომუნიკაციო პროტოკოლის შემუშავებისთვის.
+Wireshark არის packet sniffer, ანუ იჭერს პაკეტებს ქსელის კავშირიდან
+
+
+
+firewalls:
+
+packet-filtering firewall
+packet-filtering firewall აფასებენ მონაცემთა პაკეტებს, რომლებიც გადიან ქსელის საზღვრებს. თითოეული პაკეტი უნდა შევადაროთ 
+წინასწარ განსაზღვრულ წესებს. თუ პაკეტები აკმაყოფილებს ამ წესებს, firewall საშუალებას აძლევს ტრაფიკს გაიაროს. 
+თუ არა, პაკეტები იბლოკება და ლოგებში იწერება ინფორმაცია.
+
+ინფორმაცია, რომელიც შეფასებულია პაკეტების ფილტრაციის ფაიერვოლებით, შეიძლება შეიცავდეს გამოყენებული დანიშნულების პორტს, პაკეტის ტიპს და დანიშნულების IP მისამართს. ეს მონაცემები იძლევა სურათს, თუ საიდან მოდის შემომავალი პაკეტები, ვინ აგზავნის მათ და არის თუ არა ისინი უსაფრთხო.
+
+პაკეტების ფილტრაციის ფაირვოლები, როგორც წესი, დამონტაჟებულია ქსელის გარემოში კვანძებზე. ისინი შეიძლება მუშაობდნენ გადამრთველებთან და მარშრუტიზატორებთან ერთად, ამუშავებენ ტრაფიკს დიდი მოცულობის ადგილებში. ეს საშუალებას აძლევს პაკეტების ფილტრირებას Firewall-ებს აწარმოონ ტრაფიკი მთელი ქსელისთვის.
+
+
+Stateful Filtering firewall
+Stateful Filtering firewall აგროვებენ მონაცემებს ქსელის ყველა ფენიდან კონტექსტის დასადგენად, 
+ინფორმაცია წარსული კავშირების შესახებ ინახება და მობილიზებულია მომავალი წვდომის მოთხოვნების გასაანალიზებლად.
+Stateful Filtering firewall უფრო "ჭკვიანია", ვიდრე packet-filtering firewall
+
+
+deep packet inspection (dpi)
+dpi firewall გამოიყურება სათაურების მიღმა, უშუალოდ პაკეტის კონტენტში,
+თუმცა ამისთვის მინიმუმ მთლიანი პაკეტი დასჭირდება, რაც გამოიწვევს გარკვეულ შეყოვნებას (latency) 
+
+
+Application Layer Firewalls
+Application Layer Firewalls კონფიურირებულია, რათა დადგინდეს, დაბლოკოს თუ დაუშვას კომუნიკაცია აპლიკაციასან ან მის გარეთ.
+Application Layer Firewall აკონტროლებს ფაილების ან კოდის შესრულებას კონკრეტული აპლიკაციების მიერ. 
+ასე, მაშინაც კი, თუ შემოჭრილი მოიპოვებს შესვლას ქსელში ან სერვერზე, მათ არ შეუძლიათ მავნე კოდის შესრულება.
+
+
+
+
+
+
+netstat: 
+netstat -? - help
+
+netstat params:
+-a - Displays all connections and listening ports.
+-b - also display executable (program) that is associated with connection
+-f - also display domain names
+-n - display addresses and port numbers in a numerical form (performs instantly)
+-s - display per-protocol statistics
+...and more
+
+
+
+hping:
+hping3 --ack 10.10.10.101 -p 80 - ACK scan port 80
+hping3 --udp 10.10.10.101 -p 80 - UDP scan on port 80
+hping3 --icmp 10.10.10.101 - ICMP ping
+hping3 --scan 50-60 --syn 10.10.10.101 --verbose - syn scan on port 50-60, verbose log
+hping3 --icmp 10.10.10.101 --rand-dest --interface eth0
+hping3 --syn 10.10.10.101 --flood - syn flooding
+hping3 10.10.10.101 --spoof 8.8.8.8 - set a fake IP source address to 8.8.8.8
+hping3 10.10.10.101 --rand-source - set a fake IP source address to random
+
+
+
+nmap:
+nmap -sP 10.10.10.101 - scan network & detect which hosts are up
+nmap -sT -p 80,443 10.10.10.101 - scan network with full tcp handshake
+nmap -sT 10.10.10.101 - scan network top 1000 ports
+nmap -sS -p 80,443 10.10.10.101 - syn (stealthy) scan, partial tcp handshake
+nmap -O 10.10.10.101 - os scan
+nmap --osscan-guess 10.10.10.101 - aggressive os scan
+nmap -A 10.10.10.101 - all-in-one: os detection, script scan, but slow
+nmap -sS -D 192.168.100.1 10.10.10.101 - scan network, mix (decoy) your ip with ip(s) after -D
+nmap -D RND:10 10.10.10.101 - scan network, mix (decoy) your ip with random 10 ips
+nmap --script vuln 10.10.10.101 - figure out vulnerabilities of network
+nmap -sA 10.10.10.101 - ACK scan
+nmap -sP 10.10.10.101 - ping scan
+nmap -sL 10.10.10.101 - DNS scan
+nmap -T[0-4] -sA 10.10.10.101 - scan speed, 3 - default, 0 - slowest; ACK scan
+nmap -sA -PO 10.10.10.101 - protocol ping, firewall filter
+
+
+
+კონტროლის მექანიზმები:
+web app firewalls, network firewalls, database firewalls, encryption, antivirus, dlp, cm, acl, 
+
+
+
+spoofing - falsify your data
