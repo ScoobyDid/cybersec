@@ -114,3 +114,7 @@ web app firewalls, network firewalls, database firewalls, encryption, antivirus,
 
 
 spoofing - falsify your data
+
+
+ettercap -Tqi eth0 -P dns_spoof -M arp 
+Etc/Ettercap/letter.dns      - კონფიგ ფაილი
